@@ -7,9 +7,7 @@ output:
       keep_md: TRUE
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 ## R Markdown
 
@@ -17,7 +15,8 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{read data}
+
+```read
 library(dplyr)
 library(readr)
 library(fields)
@@ -50,7 +49,8 @@ setwd("~/Documents/data/Class/Repro/src")
 
 You can also embed plots, for example:
 
-```{plot points, echo=TRUE}
+
+```plot
 # Plot the points out:
 ggplot(gmpts, aes(longitude, latitude, group = status))+
   scale_fill_gradient(low = "grey70", high = "grey30", guide = "none") +
